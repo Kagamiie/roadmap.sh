@@ -37,8 +37,8 @@ function a() {
     };
 
     // if conversions["1"] && conversions["1"]["2"] exist then...
-    // conversions[1] returns { "2": (v) => (v * (9/5)) + 32, "3": (v) => v + 273.15 }
-    // conversions[1][2] return then (v) => (v * (9/5)) + 32
+    // conversions["1"] returns { "2": (v) => (v * (9/5)) + 32, "3": (v) => v + 273.15 }
+    // conversions["1"]["2"] return then (v) => (v * (9/5)) + 32
     // and (v_inp) = v; and then put in the result of the convertion that has been changed in the var and display it
     if (conversions[v_from] && conversions[v_from][v_to]) {
         const result = conversions[v_from][v_to](v_inp);
